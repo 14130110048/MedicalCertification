@@ -1,0 +1,165 @@
+#detail {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+  background-color: #efe7e7;
+  overflow-y: auto;
+
+  .submit {
+    // position: absolute;
+    // left: 50%;
+    // top: 93%;
+    // transform: translate(-50%, -93%);
+    margin-top: 100px;
+  }
+
+  .dailog {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    .dailog-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      min-height: 55%;
+      width: 70%;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+
+      .dailog-bg {
+        border-radius: 10px;
+        height: 50%;
+        width: 100%;
+        background: url("../images/chenggong-bg.png") no-repeat;
+        background-size: 100% 100%;
+
+        .success {
+          display: block;
+          margin-top: 50%;
+          font-size: 20px;
+          color: #1d3a22;
+        }
+      }
+
+      .dailog-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .tip {
+          display: block;
+          padding: 0 20px 0 20px;
+          text-align: center;
+        }
+
+        .link {
+          display: block;
+          padding: 0 20px 0 20px;
+          text-align: center;
+          min-height: 80px;
+          word-break: break-all;
+          color: #1975ea;
+        }
+
+        .copy {
+          align-self: center;
+          color: #ffffff;
+          width: 100px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          background: linear-gradient(315deg,
+              rgba(76, 132, 255, 1) 0%,
+              rgba(191, 137, 255, 1) 100%);
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .close {
+      width: 30px;
+      height: 30px;
+      background: url("../images/close.png") no-repeat;
+      background-size: 100% 100%;
+      margin-left: 95%;
+      margin-top: -10px;
+    }
+  }
+
+  #toast {
+    .weui-toast {
+      margin: 0;
+      position: fixed;
+      text-align: left;
+      left: 50%;
+      top: 50%;
+      width: 60%;
+      min-height: 1rem;
+      transform: translate(-50%, -50%);
+
+      .weui-icon_msg {
+        margin-left: 15px;
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+#doctorList {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  .list {
+    padding: 2%;
+    height: 96%;
+    width: 96%;
+
+    .doctor {
+      width: 100%;
+      // height: 130px;
+      background: url("../images/doctor-bg.png") no-repeat;
+      background-size: 100% 100%;
+
+      .doctor-content {
+        padding: 3%;
+        height: 94%;
+        width: 94%;
+        margin-bottom: 15px;
+
+        .doctorInfo-time {
+          display: block;
+          text-align: left;
+        }
+
+        .doctorInfo {
+          display: block;
+          text-align: left;
+          font-size: 18px;
+
+          i {
+            font-family: "Avenir", Helvetica, Arial, sans-serif;
+            font-style: normal;
+          }
+
+          .phone {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url("../images/phone.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+}

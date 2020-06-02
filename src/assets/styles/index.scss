@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+#index {
+  width: 100%;
+  height: 100%;
+
+  .page {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+    .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon>i,
+    .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+      color: #16d8e9;
+    }
+
+    .weui-tabbar__item {
+      .icon-home {
+        background: url("../images/icon-home.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .icon-wode {
+        background: url("../images/icon-wode.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .icon-tiku {
+        background: url("../images/icon-tiku.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .weui-bar__item_on {
+      .icon-home {
+        background: url("../images/icon-home-light.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .icon-wode {
+        background: url("../images/icon-wode-light.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .icon-tiku {
+        background: url("../images/icon-tiku-light.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+@import "./personal.scss";
+@import "./train.scss";
+@import "./home.scss";
+@import "./doctor.scss";

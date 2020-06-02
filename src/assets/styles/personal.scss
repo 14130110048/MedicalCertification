@@ -1,0 +1,275 @@
+#personal {
+  width: 100%;
+  height: 100%;
+  background-color: #efe7e7;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    height: 170px;
+    width: calc(100% - 40px);
+    background-color: #fff;
+    padding: 20px;
+
+    .top-bg {
+      height: 100%;
+      background: url("../images/person-bg.png") no-repeat;
+      background-size: 100% 100%;
+      font-size: 16px;
+
+      .head-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .head {
+          margin: 30px 15px 25px;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .info {
+          margin-top: 60px;
+          color: #fff;
+
+          .name {
+            font-size: 20px;
+          }
+
+          .phone {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .maincontent {
+    flex: 1;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+
+    .personal,
+    .yaoqing,
+    .saleman {
+      background-color: #fff;
+      height: 15%;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #efe7e7;
+      flex-direction: row;
+
+      .title {
+        margin-left: 5%;
+      }
+
+      .jiantou {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .icon-jiantou {
+          width: 15px;
+          height: 15px;
+          margin-right: 5%;
+          background: url("../images/icon-jiantou-rigth.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    .icon-personal {
+      margin-left: 20px;
+      width: 34px;
+      height: 34px;
+      background: url("../images/icon-personal.png") no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .icon-yaoqing {
+      margin-left: 20px;
+      width: 34px;
+      height: 34px;
+      background: url("../images/icon-yaoqing.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .icon-saleman {
+      margin-left: 20px;
+      width: 34px;
+      height: 34px;
+      background: url("../images/icon-saleman.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+#personalDetail {
+  width: 100%;
+  height: 100%;
+  background-color: #efe7e7;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  .top {
+    height: 240px;
+    width: 100%;
+    background-color: #fff;
+    background: url("../images/personal-detail.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; //使子项目水平居中
+    align-items: center;
+    .head {
+      margin-top: 40px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .username {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  .maincontent {
+    flex: 1;
+    // margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+
+    .personal-head {
+      background-color: #fff;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #efe7e7;
+      flex-direction: row;
+      .title {
+        margin-left: 10px;
+      }
+      .userInfo {
+        flex: 1;
+        margin-right: 20px;
+        text-align: right;
+        .head {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          float: right;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+      .icon {
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+      }
+      .icon-nicheng {
+        background: url("../images/people.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .personal {
+      background-color: #fff;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #efe7e7;
+      flex-direction: row;
+
+      .title {
+        margin-left: 10px;
+      }
+      .userInfo {
+        flex: 1;
+        margin-right: 30px;
+        text-align: right;
+      }
+      .icon {
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+      }
+      .icon-nicheng {
+        background: url("../images/people.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .icon-xingbie {
+        background: url("../images/xingbie-nv.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .icon-dianhua {
+        background: url("../images/dianhua.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .icon-quyu {
+        background: url("../images/gongsixinxi.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+#saleManList {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  .list {
+    padding: 2%;
+    height: 96%;
+    width: 96%;
+    .doctor {
+      width: 100%;
+      // height: 130px;
+      background: url("../images/doctor-bg.png") no-repeat;
+      background-size: 100% 100%;
+      .doctor-content {
+        padding: 3%;
+        height: 94%;
+        width: 94%;
+        margin-bottom: 15px;
+        .doctorInfo-time {
+          display: block;
+          text-align: left;
+        }
+        .doctorInfo {
+          display: block;
+          text-align: left;
+          font-size: 18px;
+          i {
+            font-family: "Avenir", Helvetica, Arial, sans-serif;
+            font-style: normal;
+          }
+          .phone {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url("../images/phone.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+}
